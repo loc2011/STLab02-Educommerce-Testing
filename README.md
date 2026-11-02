@@ -1,4 +1,4 @@
-# STLab02 - EduCommerce Requirement-based Testing
+# STLab02 - EduCommerce Testing
 
 Bộ bài thực hành môn Software Testing: đọc requirement, thiết kế test condition/scenario/test case, chạy data-driven bằng Python từ CSV và xuất báo cáo HTML/CSV.
 
@@ -26,7 +26,6 @@ STLab02_EduCommerce/
 ├── test_cases.csv
 ├── traceability_matrix.csv
 ├── README.md
-├── GITHUB_UPLOAD_GUIDE.md
 ├── STLab02_EduCommerce.ipynb
 ├── docs/
 │   ├── requirement_analysis.md
@@ -88,9 +87,3 @@ Có thể mở notebook `STLab02_EduCommerce.ipynb` và chạy các cell theo th
 Lần chạy đóng gói ngày 02/11/2026: **24 test cases, 24 PASS, 0 FAIL, 0 BLOCKED (pass rate 100%)**. Đây là kết quả thực thi local bằng Python đối với module mô phỏng in-memory trong Instruction, không phải kiểm thử website production hay gateway thật.
 
 Lưu ý khi review: test `TC-PAY-003` nhận đúng `PAYMENT_DECLINED` và không tạo order, nhưng snapshot ghi nhận stock SKU A giảm từ 20 xuống 18. Quan sát này không làm test REQ-10 fail (expected của REQ-10 chỉ yêu cầu declined không tạo order), nhưng là một rủi ro liên module cần xác nhận và mở rộng kiểm thử rollback inventory ở phạm vi khác.
-
-## 7. Thông tin cá nhân và GitHub
-
-Trước khi nộp, điền MSSV, họ tên, lớp trong PDF. Tên PDF theo mẫu: `MSSV_HoTenSinhVien_STLab02.pdf`.
-
-Repository name đề xuất: `stlab02-educommerce-testing`. Hướng dẫn tạo repository public bằng GitHub Desktop hoặc GitHub website nằm trong `GITHUB_UPLOAD_GUIDE.md`. Hiện tại gói này chưa có URL public thực tế; không dùng URL giả làm bằng chứng repo đã publish.
