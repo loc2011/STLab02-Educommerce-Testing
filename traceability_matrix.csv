@@ -1,0 +1,25 @@
+﻿requirement_id,condition_id,scenario_id,test_case_id,priority,title
+REQ-01,COND-CAT-01,TS-CAT-01,TC-CAT-001,P1,Tra cứu sản phẩm đang active
+REQ-01,COND-CAT-02,TS-CAT-02,TC-CAT-002,P1,Từ chối sản phẩm inactive
+REQ-01,COND-CAT-02,TS-CAT-03,TC-CAT-003,P1,Từ chối SKU không tồn tại
+REQ-02,COND-CART-01,TS-CART-01,TC-CART-001,P1,Thêm số lượng nguyên dương vào giỏ
+REQ-02,COND-CART-02,TS-CART-02,TC-CART-002,P1,Cộng dồn cùng SKU trong cart
+REQ-02,COND-CART-02,TS-CART-03,TC-CART-003,P1,Từ chối quantity bằng 0
+REQ-03,COND-PRICE-01,TS-PRICE-01,TC-PRICE-001,P1,Tính subtotal nhiều SKU bằng Decimal
+REQ-03,COND-PRICE-01,TS-PRICE-02,TC-PRICE-002,P1,Giữ chính xác phần thập phân khi nhân giá
+REQ-03,COND-PRICE-02,TS-PRICE-03,TC-PRICE-003,P1,Subtotal phản ánh đúng giá sản phẩm cập nhật
+REQ-04,COND-AUTH-01,TS-AUTH-01,TC-AUTH-001,P0,Guest không được checkout bằng COD
+REQ-04,COND-AUTH-01,TS-AUTH-02,TC-AUTH-002,P0,Guest không được checkout bằng ONLINE
+REQ-04,COND-AUTH-02,TS-AUTH-03,TC-AUTH-003,P1,Customer đăng nhập được tiếp tục checkout
+REQ-09,COND-SHP-01,TS-SHP-01,TC-SHP-001,P1,Inner area dưới ngưỡng miễn ship
+REQ-09,COND-SHP-01,TS-SHP-02,TC-SHP-002,P0,Inner area tại đúng ngưỡng miễn ship
+REQ-09,COND-SHP-02,TS-SHP-03,TC-SHP-003,P1,Outer area áp dụng phí ship cố định
+REQ-10,COND-PAY-01,TS-PAY-01,TC-PAY-001,P0,COD tạo order trạng thái PENDING_COD
+REQ-10,COND-PAY-02,TS-PAY-02,TC-PAY-002,P0,Online approved tạo trạng thái PAID
+REQ-10,COND-PAY-02,TS-PAY-03,TC-PAY-003,P0,Online declined không tạo order
+REQ-14,COND-EMPTY-01,TS-EMPTY-01,TC-EMPTY-001,P1,Không checkout cart rỗng bằng COD
+REQ-14,COND-EMPTY-01,TS-EMPTY-02,TC-EMPTY-002,P1,Không checkout cart rỗng bằng ONLINE
+REQ-14,COND-EMPTY-02,TS-EMPTY-03,TC-EMPTY-003,P1,Cart có item checkout được
+REQ-16,COND-METHOD-01,TS-METHOD-01,TC-METHOD-001,P1,Từ chối payment method WALLET
+REQ-16,COND-METHOD-01,TS-METHOD-02,TC-METHOD-002,P1,Từ chối payment method BANK
+REQ-16,COND-METHOD-02,TS-METHOD-03,TC-METHOD-003,P1,COD nằm trong danh sách method hợp lệ

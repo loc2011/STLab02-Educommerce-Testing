@@ -1,0 +1,18 @@
+{
+  "total": 24,
+  "passed": 24,
+  "failed": 0,
+  "blocked": 0,
+  "pass_rate_percent": 100.0,
+  "selected_requirements": [
+    "REQ-01",
+    "REQ-02",
+    "REQ-03",
+    "REQ-04",
+    "REQ-09",
+    "REQ-10",
+    "REQ-14",
+    "REQ-16"
+  ],
+  "generated_at": "2026-11-02T21:39:28+07:00"
+}
